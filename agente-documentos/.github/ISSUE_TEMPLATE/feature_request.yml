@@ -1,0 +1,63 @@
+name: Solicitar una característica
+description: Sugiere una idea para mejorar el proyecto
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Nos encantaría escuchar tus ideas! Comparte tu sugerencia aquí.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción de la característica
+      description: Describe claramente qué quieres que haga
+      placeholder: "Me gustaría que el app pudiera..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: use_case
+    attributes:
+      label: ¿Por qué lo necesitas?
+      description: Explica el caso de uso o problema que resolvería
+      placeholder: "Esto sería útil para..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Describe tu idea de cómo implementar esto
+      placeholder: "Una posible solución sería..."
+  
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Describe otras soluciones que hayas considerado
+      placeholder: "Otra forma de hacerlo sería..."
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      options:
+        - Baja
+        - Media
+        - Alta
+        - Crítica
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmación
+      options:
+        - label: He buscado issues existentes
+          required: true
+        - label: Esta característica no está duplicada
+          required: true

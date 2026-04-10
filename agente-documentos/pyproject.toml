@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agente-documentos"
+version = "1.0.0"
+description = "Agente Local de Documentos - Analyze PDFs with AI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Julia", email = "julia@example.com"},
+]
+keywords = [
+    "document-analysis",
+    "pdf",
+    "ai",
+    "llm",
+    "streamlit",
+    "spanish",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "streamlit==1.28.1",
+    "pymupdf==1.23.8",
+    "requests==2.31.0",
+    "python-dotenv==1.0.0",
+    "reportlab==4.0.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+    "flake8>=4.0",
+    "mypy>=0.950",
+]
+
+[project.urls]
+Homepage = "https://github.com/tu-usuario/agente-documentos"
+Repository = "https://github.com/tu-usuario/agente-documentos"
+Issues = "https://github.com/tu-usuario/agente-documentos/issues"
+Documentation = "https://github.com/tu-usuario/agente-documentos#readme"
+
+[tool.setuptools]
+packages = ["agente_documentos"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Comunidad Discord
+    url: https://discord.gg/tu-discord
+    about: Únete a nuestra comunidad para discusiones
+  - name: 📚 Documentación
+    url: https://github.com/tu-usuario/agente-documentos#readme
+    about: Lee la documentación completa
+  - name: 🆘 Soporte
+    url: https://github.com/tu-usuario/agente-documentos/discussions
+    about: Haz preguntas y obtén ayuda

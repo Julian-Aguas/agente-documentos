@@ -1,0 +1,89 @@
+name: Reportar un Bug
+description: Ayúdanos a mejorar reportando un bug
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por reportar un bug! Aquí están algunos consejos:
+        - Busca issues existentes primero
+        - Sé lo más específico posible
+        - Incluye capturas de pantalla si es relevante
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del bug
+      description: Describe el bug de manera clara y concisa
+      placeholder: "Cuando hago clic en 'Analizar', la app..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos detallados para reproducir el comportamiento
+      placeholder: |
+        1. Abre la aplicación
+        2. Carga un PDF
+        3. Haz clic en...
+        4. Observa el error
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: Describe qué debería pasar
+      placeholder: "El análisis debería completarse en 2 minutos"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento actual
+      description: Describe qué está pasando realmente
+      placeholder: "La aplicación muestra un error de timeout"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: error_logs
+    attributes:
+      label: Logs del error
+      description: Pega el error completo o logs relevantes
+      render: python
+      placeholder: |
+        Error: ...
+        Traceback: ...
+  
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema Operativo
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Otro
+    validations:
+      required: true
+  
+  - type: input
+    id: python_version
+    attributes:
+      label: Versión de Python
+      placeholder: "3.9, 3.10, 3.11, etc."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional
+    attributes:
+      label: Información adicional
+      description: Cualquier información extra que pueda ser útil
+      placeholder: "Estoy usando OpenRouter con modelo..."
