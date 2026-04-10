@@ -211,7 +211,16 @@ agente-documentos/
 - **prompts.py**: Prompts del sistema, parseo de JSON, formateo
 - **utils.py**: Funciones auxiliares (timestamps, descarga de archivos, etc.)
 
-## 🐛 Solución de Problemas
+## � Documentación Adicional
+
+Para profundizar en aspectos técnicos del proyecto:
+
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Arquitectura del sistema, patrones de diseño, flujos de datos, decisiones técnicas
+- **[TECH_STACK.md](TECH_STACK.md)** - Stack tecnológico completo, versiones de librerías, skills demonstrados, benchmarks
+- **[DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)** - Guía de despliegue en producción, cloud hosting, Docker
+- **[QUICK_START.md](QUICK_START.md)** - Setup rápido en 5 minutos
+
+## �🐛 Solución de Problemas
 
 ### "Error: API Key NO CONFIGURADA"
 
